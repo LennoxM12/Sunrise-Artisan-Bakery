@@ -1,0 +1,74 @@
+/* General Page Styling */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5em;
+    color: #2e8b57;
+    margin-bottom: 10px;
+}
+
+/* Intro */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #2e8b57;
+    margin-bottom: 20px;
+}
+
+/* Hobbies in columns */
+.hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+.hobbies li {
+    font-size: 1.1em;
+}
+
+/* Different colors */
+.hobbies li:nth-child(1) { color: #ff4500; }
+.hobbies li:nth-child(2) { color: #1e90ff; }
+.hobbies li:nth-child(3) { color: #32cd32; }
+.hobbies li:nth-child(4) { color: #ff1493; }
+.hobbies li:nth-child(5) { color: #8a2be2; }
+.hobbies li:nth-child(6) { color: #ffa500; }
+
+/* Footer */
+footer {
+    font-size: 1em;
+    color: #555;
+    margin-top: 20px;
+}
