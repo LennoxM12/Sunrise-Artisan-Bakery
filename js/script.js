@@ -1,4 +1,4 @@
-// Real-time clock
+
 function updateClock() {
     const now = new Date();
     const timeString = now.toLocaleTimeString();
@@ -7,7 +7,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// Accordion functionality
+
 const accordionBtns = document.querySelectorAll('.accordion-btn');
 accordionBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -16,7 +16,7 @@ accordionBtns.forEach(btn => {
     });
 });
 
-// Tabs functionality
+
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
 tabBtns.forEach(btn => {
@@ -29,7 +29,7 @@ tabBtns.forEach(btn => {
     });
 });
 
-// Gallery lightbox
+
 const galleryImgs = document.querySelectorAll('.gallery img');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
@@ -56,7 +56,7 @@ function initMap() {
 }
 window.onload = initMap;
 
-// Contact form submission using EmailJS
+
 (function() {
     emailjs.init("your_user_id"); // Replace with your EmailJS user ID
 })();
@@ -78,18 +78,18 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     });
 });
 
-// Enquiry form submission
+
 document.getElementById('enquiry-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const name = document.getElementById('enquiry-name').value;
     const email = document.getElementById('enquiry-email').value;
     const subject = document.getElementById('enquiry-subject').value;
 
-    // Placeholder for enquiry handling
+   
     document.getElementById('enquiry-feedback').textContent = 'Enquiry submitted successfully!';
 });
 
-// Modal functionality
+
 const modal = document.getElementById('modal');
 const openModalBtn = document.getElementById('open-modal');
 const closeModalBtn = document.querySelector('.close-modal');
@@ -105,7 +105,7 @@ window.addEventListener('click', (event) => {
     }
 });
 
-// Search functionality
+
 document.getElementById('search-btn').addEventListener('click', () => {
     const query = document.getElementById('search').value.toLowerCase();
     const sections = document.querySelectorAll('section');
@@ -114,3 +114,4 @@ document.getElementById('search-btn').addEventListener('click', () => {
         section.style.display = text.includes(query) ? 'block' : 'none';
     });
 });
+
