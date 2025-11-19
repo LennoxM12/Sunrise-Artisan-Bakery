@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Sunrise Artisan Bakery</title>
+  <meta name="description" content="Learn about Sunrise Artisan Bakery, our story, offerings, and locations in Cape Town.">
+  <meta name="keywords" content="about bakery, Sunrise Bakery, Cape Town bakery, artisan bread, locations">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script src="../js/script.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfaf6;
+      color: #2d3142;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe5b4;
+    }
+
+    .about-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .about-section h2 {
+      color: #008080;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ffe5b4;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about-section ul {
+      margin: 1rem 0;
+      padding-left: 20px;
+    }
+
+    .map {
+      margin-top: 2rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+
+    footer {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sunrise Artisan Bakery</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p><strong>Founded in 2018</strong>, Sunrise Artisan Bakery is a family-owned business based in Cape Town, dedicated to baking fresh, organic goods every day.</p>
+    <p>Our bakers blend traditional recipes with modern techniques to create breads, pastries, and cakes that bring joy to our customers. Every product is handmade with love and care.</p>
+    
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Freshly baked artisan breads (sourdough, ciabatta, rye)</li>
+      <li>Delicious pastries (croissants, danishes, muffins)</li>
+      <li>Custom cakes for all occasions</li>
+      <li>Specialty coffee and beverages</li>
+      <li>Healthy options – gluten-free & vegan treats</li>
+    </ul>
+
+    <h2>Our Locations</h2>
+    <p>📍 Cape Town CBD – 123 Main Street</p>
+    <p>📍 Sea Point – 45 Beach Road</p>
+
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.29284689159!2d18.417248315200456!3d-33.92583902934513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc676e0f5b7a2f%3A0x4e9e8e5c13a0a8cb!2sCape%20Town%20City%20Centre!5e0!3m2!1sen!2sza!4v1612345678901!5m2!1sen!2sza" 
+        allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sunrise Artisan Bakery | Cape Town</p>
+  </footer>
+</body>
+</html>

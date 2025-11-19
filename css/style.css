@@ -1,74 +1,145 @@
-/* General Page Styling */
 body {
-    background-color: #f0f8ff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.tab-content {
+    display: none;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-btn.active {
+    background-color: #ddd;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-/* Container */
-.container {
-    text-align: center;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-width: 600px;
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
 }
 
-/* Header */
-header h1 {
-    font-size: 2.5em;
-    color: #2e8b57;
-    margin-bottom: 10px;
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-/* Intro */
-p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+#google-map {
+    height: 400px;
+    width: 100%;
 }
 
-/* Profile Image */
-.profile-pic img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 3px solid #2e8b57;
-    margin-bottom: 20px;
-}
-
-/* Hobbies in columns */
-.hobbies {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 10px;
-    list-style-type: none;
-    padding: 0;
-    margin: 20px auto;
+form {
+    display: flex;
+    flex-direction: column;
     max-width: 400px;
-    text-align: left;
 }
 
-.hobbies li {
-    font-size: 1.1em;
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
-/* Different colors */
-.hobbies li:nth-child(1) { color: #ff4500; }
-.hobbies li:nth-child(2) { color: #1e90ff; }
-.hobbies li:nth-child(3) { color: #32cd32; }
-.hobbies li:nth-child(4) { color: #ff1493; }
-.hobbies li:nth-child(5) { color: #8a2be2; }
-.hobbies li:nth-child(6) { color: #ffa500; }
+button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-/* Footer */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+
 footer {
-    font-size: 1em;
-    color: #555;
-    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }

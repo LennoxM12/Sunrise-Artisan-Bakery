@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Sunrise Artisan Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfaf6;
+      color: #2d3142;
+    }
+
+    header {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe5b4;
+    }
+
+    .products-section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+    }
+
+    .products-section h2 {
+      text-align: center;
+      color: #008080;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      border-bottom: 3px solid #ffe5b4;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 1rem 0 0.5rem;
+      color: #2d3142;
+    }
+
+    .product-card p {
+      font-weight: bold;
+      color: #008080;
+      margin: 0.5rem 0;
+    }
+
+    .product-card button {
+      margin-top: 10px;
+      background: #008080;
+      color: white;
+      font-weight: bold;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .product-card button:hover {
+      background: #006666;
+    }
+
+    footer {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sunrise Artisan Bakery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products-section">
+    <h2>What We Bake</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="images/sourdough.png" alt="Sourdough Bread">
+        <h3>Sourdough Bread</h3>
+        <p>R35 per loaf</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/croissants.png" alt="Croissants">
+        <h3>Croissants</h3>
+        <p>R20 each</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/cinnamon-rolls.png" alt="Cinnamon Rolls">
+        <h3>Cinnamon Rolls</h3>
+        <p>R25 each</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/chocolate-cake.png" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>R300 whole</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/red-velvet.png" alt="Red Velvet Cake">
+        <h3>Red Velvet Cake</h3>
+        <p>R200 whole</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sunrise Artisan Bakery | Cape Town</p>
+  </footer>
+</body>
+</html>

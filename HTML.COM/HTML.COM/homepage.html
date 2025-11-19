@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise Artisan Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fdfaf6; /* cream background */
+      color: #2d3142; /* dark navy */
+      line-height: 1.6;
+    }
+
+    header {
+      background: #008080; /* teal */
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe5b4; /* peach */
+    }
+
+    .hero {
+      background: url("https://images.unsplash.com/photo-1509440159598-6c0e1a5f3d3d") center/cover no-repeat;
+      color: white;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+      z-index: 1;
+    }
+
+    .hero div {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+
+    .hero a {
+      display: inline-block;
+      background: #008080;
+      padding: 12px 24px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition:0.3s;
+    }
+
+    .hero a:hover {
+      background: #006666;
+    }
+
+    footer {
+      background: #008080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sunrise Artisan Bakery</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Freshly Baked Every Morning</h2>
+      <p>Discover breads, pastries, and cakes made with love in Cape Town.</p>
+      <a href="product.html">Shop Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sunrise Artisan Bakery | Cape Town</p>
+  </footer>
+</body>
+</html>
